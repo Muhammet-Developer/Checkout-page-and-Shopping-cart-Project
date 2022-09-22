@@ -1,0 +1,338 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+body{
+  background-color: cadetblue;
+}
+  main {
+    position: relative;
+    width: 70%;
+    left: 70%;
+    transform: translateX(-50%);
+    margin: 35px 0;
+    display: grid;
+    grid-template-columns: 465px 320px;
+  }
+  #products-preview {
+    position: relative;
+  }
+  
+  #product-painel {
+    position: absolute;
+    width: 100%;
+    border-radius: 10px;
+    background-color: #eeeeee;
+    padding: 10px 20px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  #product-painel .product {
+    position: relative;
+    width: 100%;
+    display: flex;
+    margin: 10px 0;
+  }
+  
+  .product img {
+    width: 40%;
+    border-radius: 10px;
+    margin-right: 20px;
+  }
+  
+  .product-info {
+    font-family: Mon, Arial, Helvetica, sans-serif;
+    width: 100%;
+  }
+  
+  .product-info h2 {
+    font-size: 16px;
+    color: #4e5150;
+    margin: 5px 0;
+  }
+  
+  .product-info p {
+    font-size: 12px;
+    color: #4e5150;
+    margin: 5px 0;
+  }
+  
+  .product-info p strong {
+    color: #f2994a;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  
+  .quantity-controller {
+    border-radius: 5px;
+    border: 1px solid rgb(136, 136, 136);
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    margin-top: 25px;
+  }
+  
+  .quantity-controller button,
+  p {
+    position: relative;
+    display: block;
+  }
+  
+  .quantity-controller p {
+    line-height: 24px;
+  }
+  
+  .quantity-controller button {
+    margin: 5px 0;
+    border: 0;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+  }
+  
+  .quantity-controller button i {
+    font-size: 12px;
+  }
+  
+  .buy-detail {
+    margin: 5px 0;
+    border-top: 1px solid #bdbdbd;
+    display: flex;
+    position: relative;
+    width: 100%;
+    font-family: Mon, Arial, Helvetica, sans-serif;
+  }
+  
+  .buy-detail p {
+    display: block;
+    width: 50%;
+  }
+  
+  .buy-detail p:nth-child(2) {
+    text-align: right;
+  }
+  
+  #shipping {
+    margin-top: 50px;
+  }
+  
+  .line-through {
+    text-decoration: line-through;
+  }
+  
+  span {
+    cursor: pointer;
+  }
+  i {
+    border-radius: 5px;
+    border: 1px solid gray;
+    background-color: rgb(223, 221, 221);
+    /* padding: 12px; */
+    padding: 5px 10px 10px 5px;
+    margin: 10px 3px 3px 3px;
+    height: 10px;
+    width: 10px;
+  }
+  .quantity-controller p {
+    padding: 8px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  
+  @media only screen and (max-width: 1450px) {
+    main {
+      position: relative;
+      width: 70%;
+      left: 50%;
+      transform: translateX(-50%);
+      margin: 35px 0;
+      display: grid;
+      grid-template-columns: 465px 320px;
+    }
+  
+    
+    #products-preview {
+      position: relative;
+    }
+  
+    #product-painel {
+      position: absolute;
+      width: 100%;
+      border-radius: 10px;
+      background-color: #eeeeee;
+      padding: 10px 20px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+  
+    #product-painel .product {
+      position: relative;
+      width: 100%;
+      display: flex;
+      margin: 10px 0;
+    }
+  
+    .product img {
+      width: 30%;
+      border-radius: 10px;
+      margin-right: 20px;
+    }
+  
+    .product-info {
+      font-family: Mon, Arial, Helvetica, sans-serif;
+      width: 100%;
+    }
+  
+    .product-info h2 {
+      font-size: 16px;
+      color: #4e5150;
+      margin: 5px 0;
+    }
+  
+    .product-info p {
+      font-size: 12px;
+      color: #4e5150;
+      margin: 5px 0;
+    }
+  
+    .product-info p strong {
+      color: #f2994a;
+      font-size: 16px;
+      font-weight: 600;
+    }
+  
+    .quantity-controller {
+      border-radius: 5px;
+      border: 1px solid rgb(136, 136, 136);
+      display: flex;
+      justify-content: space-around;
+      width: 50%;
+      margin-top: 25px;
+    }
+  
+    .quantity-controller button,
+    p {
+      position: relative;
+      display: block;
+    }
+  
+    .quantity-controller p {
+      line-height: 24px;
+    }
+  
+    .quantity-controller button {
+      margin: 5px 0;
+      border: 0;
+      background-color: #e0e0e0;
+      border-radius: 5px;
+      padding: 5px;
+      text-align: center;
+    }
+  
+    .quantity-controller button i {
+      font-size: 12px;
+    }
+  
+    .buy-detail {
+      margin: 5px 0;
+      border-top: 1px solid #bdbdbd;
+      display: flex;
+      position: relative;
+      width: 90%;
+      font-family: Mon, Arial, Helvetica, sans-serif;
+    }
+  
+    .buy-detail p {
+      display: block;
+      width: 50%;
+    }
+  
+    .buy-detail p:nth-child(2) {
+      text-align: right;
+    }
+  
+    #shipping {
+      margin-top: 50px;
+    }
+  
+    .line-through {
+      text-decoration: line-through;
+    }
+  }
+  
+  @media only screen and (max-width: 540px) {
+    main {
+      grid-template-columns: 100%;
+      width: 90%;
+      grid-template-rows: 400px 1fr;
+      grid-template-areas: "top""bottom";
+    }
+    #products-preview {
+      width: 100%;
+      grid-area: top;
+    }
+  
+    #product-painel {
+      padding: 0;
+    }
+  
+    #btn-submit {
+      width: 50%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  
+    #postal-code-field {
+      width: 100%;
+    }
+  
+    .product {
+      padding: 0 15px;
+    }
+  
+    .buy-detail {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  
+  .remove-product {
+    border: 0;
+    padding: 4px 8px;
+    margin: 5px;
+    background-color: #c66;
+    color: #fff;
+    font-family: "HelveticaNeue-Medium", "Helvetica Neue Medium";
+    font-size: 12px;
+    border-radius: 3px;
+  }
+  
+  .remove-product:hover {
+    background-color: #a44;
+  }
+  
+  .product-price strong::before {
+    content: "$";
+  }
+  
+  .line-through::before {
+    content: "$";
+  }
+  
+  .buy-detail p:nth-child(2):before {
+    content: "$";
+  }
+  
+  .product-line-price {
+    float: left;
+    clear: left;
+    width: auto;
+    margin-top: 10px;
+  }
+  
+  .product-line-price:before {
+    content: "Product Total: $";
+  }
